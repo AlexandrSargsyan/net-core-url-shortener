@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+    <div class="text-center">
+        <div class="input-group mb-3">
+            <input type="text" id="url" class="form-control"
+                   placeholder="http://your-url-to-short.com" aria-describedby="basic-addon2">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Alias</span>
+            </div>
+            <input type="text" id="alias" placeholder="if not provided it will be automatically generated" class="form-control">
+
+        </div>
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" id="generate" type="button">Generate</button>
+        </div>
+
+        <div class="alert alert-success" role="alert">
+            Here your new ShortenedLink <a href="#" id="short-url" class="alert-link" target="_blank">link</a>
+        </div>
+    </div>
